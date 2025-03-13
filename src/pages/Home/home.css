@@ -1,0 +1,19 @@
+.swiper-button-prev, .swiper-button-next{
+    width: 50px;
+    height: 51px;
+    font-size: 15px;
+    border-radius: 12px;
+    border: 0;
+    background:var(--organ---secondary, #FF6C00) ;
+     
+    
+    
+    }
+    
+    .swiper-button-next:hover{
+        background: var(--disable-gray, #F3F2F2);
+    }
+    
+    .swiper-button-prev:hover{
+        background: var(--disable-gray, #F3F2F2);
+    }

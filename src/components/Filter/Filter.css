@@ -1,0 +1,78 @@
+/* Filter Bar Container */
+.filter-bar-container {
+  display: flex;
+  align-items: center;
+  width: 100% !important;
+  justify-content: flex-start;
+}
+
+/* Navbar Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  width: 0px;
+}
+
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0085ff;
+  color: white;
+  padding: 10px 15px;
+  font-size: 18px;
+  width:100% !important;
+  flex-wrap: wrap;
+}
+
+/* Filter Icon */
+.filter-icon {
+  width: 25px;
+  height: 25px;
+  background-color: none;
+  margin-right: 10px;
+}
+
+/* Results Text */
+.results-text {
+  flex: 1;
+  text-align: center;
+}
+
+/* Controls (Show & Sort Dropdown) */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.controls label {
+  margin: 0 5px;
+}
+
+.show-input {
+  width: 50px;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+}
+
+.sort-dropdown {
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .filter-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .controls {
+    margin-top: 10px;
+  }
+}
