@@ -1,13 +1,11 @@
 import header from '../../assets/cover img/Header image.png'
 import React from 'react'
 import './header.css'
-import { Container, Row, Col,  } from "react-bootstrap";
+ 
 const Header = () => {
   return (
 
-    <Container>
-      <Row>
-        <Col md="12">
+    
 
        <div>
 
@@ -18,9 +16,7 @@ const Header = () => {
       <a className='d-inline-flex  btn-giant shadow-sm rounded' href='.' >Shop Now</a>
     </div>
        </div>
-        </Col>
-      </Row>
-    </Container>
+      
     
 
     

@@ -9,10 +9,11 @@ import Cardsone from '../../components/Cards/Cardsone';
 import Header from '../../components/header/Header';
 import Shopcategorie from '../../components/Shop Categories/Shopcategorie'
 import Sectionone from '../../components/Section/Sectionone';
-import  Footerpage from '../../components/Footer/Footerpage';
+ 
 import  right from '../../assets/icons/angle right img.svg'
 import left from '../../assets/icons/angle left img.svg'
 import Cardstwo from '../../components/Cards/Cardstwo';
+ 
 
  
 
@@ -71,7 +72,7 @@ const Home = () => {
 
   return (
     <>
-
+     
     <Header/>
     <div>
       <section className='  pb-5 pt-2'>
@@ -144,7 +145,7 @@ const Home = () => {
       </Container>
 
      <Sectionone/>
-     <Footerpage/>
+      
     </div>
     </>
   )

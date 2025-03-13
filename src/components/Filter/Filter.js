@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Filter.css"; // Custom CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import FilterIcon from "../../images/system-uicons_filtering.svg"; // Import image
+import FilterIcon from "../../assets/images/system-uicons_filtering.svg"; // Import image
 
 const FilterBar = () => {
   const [showCount, setShowCount] = useState(16);

@@ -1,6 +1,6 @@
 import React from 'react';
 import "./NewArrival.css";
-import Rectangle from "../../images/background Image.png";
+import Rectangle from "../../assets/images/background Image.png";
 
 const NewArrival = () => {
     return (

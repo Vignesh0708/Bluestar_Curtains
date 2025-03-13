@@ -1,15 +1,20 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Doublenavbar from './components/doublenavbar/Doublenavbar';
+import Footerpage from './components/Footer/Footerpage';
 import Home from './pages/Home/Home';
-// import Header from './components/header/Header';
-// import Footerpage from './components/Footer/Footerpage';
-// import Shopcategorie from './components/Shop Categories/Shopcategorie';
- 
- 
+import Newarrival from './pages/New-arrival/Newarrival.jsx';
 
 function App() {
   return (
-     
-      <Home/>
+    <>
+      <Doublenavbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/new-arrival" element={<Newarrival />} />
+      </Routes>
+      <Footerpage />
+    </>
   );
 }
 
