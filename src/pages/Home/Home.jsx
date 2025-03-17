@@ -13,8 +13,8 @@ import  Footerpage from '../../components/Footer/Footerpage';
 import  right from '../../assets/icons/angle right img.svg'
 import left from '../../assets/icons/angle left img.svg'
 import Cardstwo from '../../components/Cards/Cardstwo';
-
- 
+import Pagination from "../../components/Pagination/Pagination";
+import Benefit from '../../components/Benefits/Benefits';
 
 
 const Home = () => {

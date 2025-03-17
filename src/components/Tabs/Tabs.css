@@ -1,0 +1,195 @@
+/* General Styles */
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Tabs Styling */
+.nav-tabs {
+  border-bottom: 2px solid #007bff;
+}
+
+.nav-tabs .nav-link {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+/* Tab Content */
+.tab-content {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Typography */
+.line1 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.line2 {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+/* List Styling */
+ul, ol {
+  padding-left: 20px;
+}
+
+ul li, ol li {
+  margin-bottom: 5px;
+}
+
+/* Additional Content Box */
+.additional-content {
+  padding: 15px;
+  border: none !important;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+/* Support Section */
+.support-section {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.support-section .row {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  align-items: flex-start;
+}
+
+.support-section .col-md-4 {
+  text-align: center;
+}
+
+.support-section p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #007bff;
+  margin-top: 5px;
+}
+
+/* Icons Styling */
+.support-section svg {
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+p{
+  color: black !important;
+}
+/* General Styling */
+.container{
+  max-width: 900px;
+  margin: auto;
+  
+}
+
+/* Tab Content Styling */
+.additional-content {
+  border-radius: 10px;
+  border: 1px solid;
+  padding: 15px;
+
+}
+
+/* Support Icons Section */
+.support-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+
+}
+
+.support-section .col-md-4 {
+  display: flex;
+  flex-direction: column;
+flex-direction: row;
+
+}
+
+.support-section p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #007bff;
+}
+.Logoo{
+  display: flex;
+  align-items: flex-start;
+  gap: 0px;
+  justify-content: space-evenly;
+}
+
+
+/* Icons */
+.support-section svg {
+  margin-bottom: 5px;
+  color: #007bff; /* Primary blue color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .support-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .support-section .col-md-4 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.support-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px; /* Adjust spacing between icons */
+  flex-wrap: wrap; /* Ensures responsiveness */
+  padding: 20px 0;
+}
+
+.support-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px !important;
+  color: #008CFF; /* Adjust color to match your theme */
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.support-item:hover {
+  color: #0056b3; /* Darker shade for hover effect */
+}
+
+.support-icon {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+.blue1{
+  font-size: 16px;
+     
+}
