@@ -1,10 +1,13 @@
+ 
 import React from 'react';
+// import Loginform from './components/Form/Login/Loginform.jsx';
+ 
 import { Routes, Route } from 'react-router-dom';
-import Doublenavbar from './components/doublenavbar/Doublenavbar';
-import Footerpage from './components/Footer/Footerpage';
-import Home from './pages/Home/Home';
+import Doublenavbar from './components/doublenavbar/Doublenavbar.jsx';
+import Footerpage from './components/Footer/Footerpage.jsx';
+import Home from './pages/Home/Home.jsx';
 import Newarrival from './pages/New-arrival/Newarrival.jsx';
-
+  
 function App() {
   return (
     <>
@@ -14,6 +17,8 @@ function App() {
         <Route path="/new-arrival" element={<Newarrival />} />
       </Routes>
       <Footerpage />
+
+     {/* <Loginform/> */}
     </>
   );
 }

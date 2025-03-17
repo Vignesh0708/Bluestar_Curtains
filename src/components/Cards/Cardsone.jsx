@@ -4,26 +4,27 @@ import { NavLink } from "react-router-dom";
 import star from '../../assets/icons/Star.svg'
 import Cartbtn from '../Buttons/Cartbtn';
 import Primartbtn from '../Buttons/Primartbtn';
+ 
 
 
 
 const Cardsone = ( {material}) => {
   return (
     <div>
-         <div className='image-box'>
+         <div className='image-box '>
             <NavLink>
-             <Card className='ms-1 p-1 '>
-              <Card.Img className='rounded 'style={{height:"18rem"}} src={material.image} alt=' ' variant='top' />
+             <Card className='ms-1 p-2 product-card '>
+              <Card.Img className='rounded 'style={{height:"11rem"}} src={material.image} alt=' ' variant='top' />
               <Card.Body className=' '>
                 <div className='d-flex justify-content-between align-items-center'>
                 <span  className="fs-6 fw-bold">{material.price}</span>
-                 <span   className=" d-flex align-items-center fs-6 ">
+                 <span   className=" d-flex align-items-center fs-6 fw-bold">
                     <img className='me-1 fw-bold' src={star} alt='star icon '/>
                        {material.rating}
                  </span>
                 </div>
                 
-                <Card.Text style={{fontWeight:"500"}} className="mt-2 text-center fs-6  text-black " >
+                <Card.Text style={{fontWeight:"400",fontSize:"12px"}} className="mt-2 text-center  text-black " >
                   
                   {material.content}
                  </Card.Text>
@@ -47,4 +48,4 @@ const Cardsone = ( {material}) => {
   )
 }
 
-export default Cardsone
+export default Cardsone;

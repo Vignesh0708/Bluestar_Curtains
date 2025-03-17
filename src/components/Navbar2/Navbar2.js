@@ -4,7 +4,7 @@ import logo from "../../assets/images/blue logo.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button } from "react-bootstrap";
 import { BiCalendar } from "react-icons/bi";
-import Menu from "../Megamenu/Menu";
+import Menu from "../Megamenu/Menu.jsx";
 import { Link } from "react-router-dom";
 
 function Navbar2() {
@@ -34,7 +34,7 @@ function Navbar2() {
           <li><Link className="text-black" to="/">Home</Link></li>
           <li><Link className="text-black" to="/new-arrival">New Arrival</Link></li>
           <li onClick={toggleMenu} className="dropdown-trigger">
-            <span className="text-black">Shop by Category</span>
+            < li className="text-black">Shop by Category</ li>
           </li>
           <li><Link className="text-black" to="/collections">Collections</Link></li>
           <li><Link className="text-black" to="/expert-service">Expert Service</Link></li>

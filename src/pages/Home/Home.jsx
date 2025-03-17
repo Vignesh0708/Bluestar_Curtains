@@ -9,10 +9,12 @@ import Cardsone from '../../components/Cards/Cardsone';
 import Header from '../../components/header/Header';
 import Shopcategorie from '../../components/Shop Categories/Shopcategorie'
 import Sectionone from '../../components/Section/Sectionone';
+// import cover3 from '../../assets/images/cover image-3.png'
  
-import  right from '../../assets/icons/angle right img.svg'
-import left from '../../assets/icons/angle left img.svg'
+// import  right from '../../assets/icons/angle right img.svg'
+// import left from '../../assets/icons/angle left img.svg'
 import Cardstwo from '../../components/Cards/Cardstwo';
+import Carousel from '../../components/ReveiwCarousel/Carousel'
  
 
  
@@ -80,12 +82,12 @@ const Home = () => {
 
             <Row>
                 <Col md="12">
-                  <div className='text-black text-center main_heading'>
+                  <div className='text-black text-center    '>
                     <h1>NEW ARRIVAL</h1>
                   </div>
                 </Col>
             </Row>
-            <Row>
+            {/* <Row>
               <Col md="12">
               <div className='d-flex justify-content-between my-2'>
                   <div className='d-inline-flex  swiper-button-prev shadow-sm ' type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -100,11 +102,11 @@ const Home = () => {
        
      </div >
               </Col>
-            </Row>
+            </Row> */}
 
             <Row >
                 <Col md="12" >
-                <Slider {...settings}  >
+                <Slider {...settings} className='' >
                  {materialdata.map((material,inx)=>{
                   return(
                    <Cardsone   material={material} key={inx}/>
@@ -119,7 +121,9 @@ const Home = () => {
      </section>
 
      < Shopcategorie/>
-      <Container>
+
+     <section className='pb-5 pt-2  '>
+      <Container >
         <Row>
           <Col md="12" className='text-center'>
           <div className=' categorie-header d-inline-block  justify-content-center mb-5 '>
@@ -132,6 +136,7 @@ const Home = () => {
         </Row>
         <Row>
            <Col md="12">
+           
            <Slider {...settings}  >
                  {products.map(( product,ind)=>{
                   return(
@@ -141,10 +146,14 @@ const Home = () => {
                 </Slider>
            </Col>
          </Row>
-
+             
       </Container>
 
+
+     </section>
+
      <Sectionone/>
+     <Carousel/>
       
     </div>
     </>

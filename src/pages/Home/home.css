@@ -1,19 +1,38 @@
-.swiper-button-prev, .swiper-button-next{
-    width: 50px;
-    height: 51px;
-    font-size: 15px;
-    border-radius: 12px;
-    border: 0;
-    background:var(--organ---secondary, #FF6C00) ;
-     
-    
+  .slick-prev-one{
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 15px !important;
+    border-radius: 12px !important;
+    border: 0 !important;
+    background:var(--organ---secondary, #FF6C00) !important;
+    position: relative !important;
+    bottom: -35px !important;
+    left: 20px !important;
     
     }
+
+    .slick-next-one{
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 15px !important;
+        border-radius: 12px !important;
+        border: 0 !important;
+        background:var(--organ---secondary, #FF6C00) !important;
+        position: relative !important;
+        bottom: 35px !important;
+    }
+
     
-    .swiper-button-next:hover{
-        background: var(--disable-gray, #F3F2F2);
+    .slick-next:hover{
+        background: var(--disable-gray, #F3F2F2) !important;
+        color: transparent !important;
     }
     
-    .swiper-button-prev:hover{
-        background: var(--disable-gray, #F3F2F2);
+    .slick-prev:hover{
+        background: var(--disable-gray, #F3F2F2) !important;
+         color: transparent !important;
+
     }
+
+
+

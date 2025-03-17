@@ -1,10 +1,50 @@
-/* Filter Bar Container */
+/* Filter Bar Container
 .filter-bar-container {
   display: flex;
   align-items: center;
   width: 100% !important;
   justify-content: flex-start;
+} */
+
+
+ 
+
+ /* Ensure sticky position works properly */
+ .filter-bar-container {
+  position: relative; /* Ensure proper context */
+  z-index: 1050; /* Ensure it's above other content */
 }
+
+/* Input and Dropdown Alignment */
+.show-input {
+  width: 80px;
+}
+
+/* Dropdown Position Fix */
+.dropdown {
+  position: relative;
+  z-index: 1060;
+}
+
+/* Ensure sticky-top works correctly */
+.sticky-top {
+  top: 0;
+  z-index: 1020;
+}
+
+/* Fix overflow issue in Bootstrap offcanvas */
+.offcanvas {
+  overflow-y: auto; /* Ensure offcanvas scrolls if needed */
+}
+
+body, html {
+  overflow: auto; 
+}
+
+
+
+
+
 
 /* Navbar Logo */
 .navbar-logo {

@@ -1,0 +1,14 @@
+@media screen and (max-width:768px){
+
+    .link{
+        width: 100%;
+      display:  grid;
+      justify-content: center;
+    }
+
+     .main-logo{
+        
+      
+     }
+
+}

@@ -1,8 +1,8 @@
 import React from 'react'
  
 import NewArrival from '../../components/NewArrival/NewArrival'
-import Filter from '../../components/Filter/Filter'  
-import Productlist from '../../components/Productlist/Productlist'
+ 
+import MainComponent from '../../components/maincomponent/MainComponent'
  
 
 const Newarrival = () => {
@@ -10,8 +10,7 @@ const Newarrival = () => {
     <div>
        
       <NewArrival/>
-      <Filter/>
-      <Productlist/>
+      <MainComponent/>
        
     </div>
   )
