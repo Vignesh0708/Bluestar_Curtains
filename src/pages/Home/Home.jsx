@@ -14,10 +14,8 @@ import Sectionone from '../../components/Section/Sectionone';
 // import  right from '../../assets/icons/angle right img.svg'
 // import left from '../../assets/icons/angle left img.svg'
 import Cardstwo from '../../components/Cards/Cardstwo';
-import Carousel from '../../components/ReveiwCarousel/Carousel'
- 
-
- 
+import Pagination from "../../components/Pagination/Pagination";
+import Benefit from '../../components/Benefits/Benefits';
 
 
 const Home = () => {
