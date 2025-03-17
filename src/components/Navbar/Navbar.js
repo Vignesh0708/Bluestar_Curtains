@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import call from "../../images/phone-call.png";
+import call from "../../assets/images/phone-call.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 

@@ -5,14 +5,11 @@ import mainlogo from '../../assets/icons/main-logo.png'
 import address from '../../assets/icons/location icon.png'
 import email from '../../assets/icons/email icon.png'
 import  call from '../../assets/icons/call icon.png'
-import { Container, Row, Col,  } from "react-bootstrap";
-
+ 
 const Footerpage = () => {
   return (
 
-      <Container>
-        <Row>
-          <Col >
+       
 
     <footer className="bg-dark text-light py-4">
     <div className="container">
@@ -106,9 +103,7 @@ const Footerpage = () => {
       </div>
     </div>
   </footer>
-          </Col>
-        </Row>
-      </Container>
+        
   )
 }
 
