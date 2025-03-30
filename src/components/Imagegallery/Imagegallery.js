@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Imagegallery.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
+ 
 import initialImage from "../../assets/Imagegallery/kids-playing-around-calm-cosy-spaces 1.svg";
 import image1 from "../../assets/Imagegallery/images (1).svg";
 import image2 from "../../assets/Imagegallery/images (2).svg";
@@ -169,6 +168,8 @@ const ImageGallery = () => {
               <img src={image6} className="Cart" alt="Cart Button" />
               <button className="buy-noww" >Buy Now</button>
             </div>
+
+            
 
             {/* Continue Shopping */}
             <div className="Continue">

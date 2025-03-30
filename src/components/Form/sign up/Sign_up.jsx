@@ -2,41 +2,30 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import loginimg from '../../../assets/cover img/Login form img.png';
+import signupimg from '../../../assets/cover img/Login form img.png';
 import google from '../../../assets/icons/google icon.png';
-import './login.css';
-import { Link } from 'react-router-dom';
+ import './sign.css'
 
-const Loginform = () => {
+const Sign_up = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [nameError, setNameError] = useState('');
   const [emailError, setEmailError] = useState('');
   const [passwordError, setPasswordError] = useState('');
+  const [confirmPasswordError, setConfirmPasswordError] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
-
-  // Valid credentials
-  const validCredentials = {
-    email: 'user@example.com',
-    password: ' qwe123',
-  };
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-    setEmailError('');
-    setPasswordError('');
-  };
-
-  const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
-    setEmailError('');
-    setPasswordError('');
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     let isValid = true;
+
+    if (!name) {
+      setNameError('Name is required');
+      isValid = false;
+    }
 
     if (!email) {
       setEmailError('Email is required');
@@ -48,16 +37,17 @@ const Loginform = () => {
       isValid = false;
     }
 
+    if (password !== confirmPassword) {
+      setConfirmPasswordError('Passwords do not match');
+      isValid = false;
+    }
+
     if (isValid) {
-      if (email === validCredentials.email && password === validCredentials.password) {
-        setSuccessMessage('Login successfully');
-        setEmail('');
-        setPassword('');
-      } else {
-        setEmailError('Invalid email or password');
-        setPasswordError('Invalid email or password');
-        setSuccessMessage('');
-      }
+      setSuccessMessage('Account created successfully');
+      setName('');
+      setEmail('');
+      setPassword('');
+      setConfirmPassword('');
     }
   };
 
@@ -66,16 +56,29 @@ const Loginform = () => {
       <Row>
         <Col md={5} className="d-none d-md-block p-0">
           <div>
-            <img style={{ height: '100vh' }} className='loginimage' src={loginimg} alt='' />
+            <img style={{ height: '100vh' }} className=' loginimage' src={signupimg} alt='' />
           </div>
         </Col>
 
         <Col md={7} className="d-flex align-items-center justify-content-center">
-          <div className="p-4 d-grid align-items-center" style={{ maxWidth: '400px'  }}>
-            <h2 className="mb-4">Log in to your account</h2>
-            <p className='fw-bold text-muted'>Welcome back! Please enter your details.</p>
+          <div className="p-4 d-grid align-items-center" style={{ maxWidth: '400px' }}>
+            <h2 className="mb-4">Create an account</h2>
+            <p className='fw-bold text-muted'>Join us today! Please enter your details.</p>
 
             <Form onSubmit={handleSubmit}>
+              <Form.Group className="mb-3" controlId="formName">
+                <Form.Label className='fw-bold'>Full Name<span className="text-danger">*</span></Form.Label>
+                <Form.Control
+                  className='shadow-sm'
+                  type="text"
+                  placeholder="Enter Your Name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                />
+                {nameError && <small className="text-danger">{nameError}</small>}
+              </Form.Group>
+
               <Form.Group className="mb-3" controlId="formEmail">
                 <Form.Label className='fw-bold'>Email<span className="text-danger">*</span></Form.Label>
                 <Form.Control
@@ -83,7 +86,7 @@ const Loginform = () => {
                   type="email"
                   placeholder="Enter Your Email"
                   value={email}
-                  onChange={handleEmailChange}
+                  onChange={(e) => setEmail(e.target.value)}
                   required
                 />
                 {emailError && <small className="text-danger">{emailError}</small>}
@@ -97,7 +100,7 @@ const Loginform = () => {
                     type={showPassword ? 'text' : 'password'}
                     placeholder="Enter Password"
                     value={password}
-                    onChange={handlePasswordChange}
+                    onChange={(e) => setPassword(e.target.value)}
                     required
                   />
                   <span className='text-muted'
@@ -110,22 +113,30 @@ const Loginform = () => {
                 {passwordError && <small className="text-danger">{passwordError}</small>}
               </Form.Group>
 
-              <Form.Group className="mb-4 mt-4" controlId="formRemember">
-                <Form.Check style={{ fontSize: '12px' }} className='d-inline-block' type="checkbox" label="Remember For 30 Days" />
-                <Link style={{ fontSize: '13px', fontWeight: '500' }}  to="/forgot-password" className="float-end">Forgot Password</Link>
+              <Form.Group className="mb-3" controlId="formConfirmPassword">
+                <Form.Label className='fw-bold'>Confirm Password<span className="text-danger">*</span></Form.Label>
+                <Form.Control
+                  className='shadow-sm'
+                  type="password"
+                  placeholder="Confirm Password"
+                  value={confirmPassword}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
+                  required
+                />
+                {confirmPasswordError && <small className="text-danger">{confirmPasswordError}</small>}
               </Form.Group>
 
               <Button variant="primary" type="submit" className="w-100 mb-3 fw-bold">
-                Sign in
+                Sign up
               </Button>
 
               {successMessage && <p className="text-success text-center fw-bold">{successMessage}</p>}
 
               <Button variant="light" className="w-100 mb-3 d-flex align-items-center justify-content-center shadow-sm fw-bold">
-                <img className='me-2' src={google} alt='google icon' /> Sign in with Google
+                <img className='me-2' src={google} alt='google icon' /> Sign up with Google
               </Button>
 
-              <p style={{ fontSize: '12px' }} className="text-center mt-4">Don't have an account? <a style={{ fontWeight: '600' }} href="/sign-up">Sign up</a></p>
+              <p style={{ fontSize: '12px' }} className="text-center mt-4">Already have an account? <a style={{ fontWeight: '600' }} href="/log-in">Log in</a></p>
             </Form>
           </div>
         </Col>
@@ -134,4 +145,4 @@ const Loginform = () => {
   );
 };
 
-export default Loginform;
+export default  Sign_up;

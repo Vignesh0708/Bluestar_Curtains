@@ -1,0 +1,30 @@
+@media screen and ( min-width:768px){
+    .loginimage{
+     width: 350px;
+    }
+ 
+ }
+ 
+ @media screen and ( min-width:992px){
+     .loginimage{
+      width: 450px;
+     }
+  }
+ 
+  @media screen and ( min-width:1200px){
+     .loginimage{
+      width: 650px;
+     }
+  }
+ 
+  .eye-icon {
+    width: 20px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  

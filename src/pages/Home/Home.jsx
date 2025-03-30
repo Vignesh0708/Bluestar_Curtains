@@ -9,13 +9,18 @@ import Cardsone from '../../components/Cards/Cardsone';
 import Header from '../../components/header/Header';
 import Shopcategorie from '../../components/Shop Categories/Shopcategorie'
 import Sectionone from '../../components/Section/Sectionone';
+import Doublenavbar from '../../components/doublenavbar/Doublenavbar.jsx';
+import Footerpage from '../../components/Footer/Footerpage.jsx';
+import Cardstwo from '../../components/Cards/Cardstwo';
+
+
+
 // import cover3 from '../../assets/images/cover image-3.png'
- 
 // import  right from '../../assets/icons/angle right img.svg'
 // import left from '../../assets/icons/angle left img.svg'
-import Cardstwo from '../../components/Cards/Cardstwo';
-import Pagination from "../../components/Pagination/Pagination";
-import Benefit from '../../components/Benefits/Benefits';
+// import TestimonialCarousel from '../../components/ReveiwCarousel/Carousel';
+// import ImageGallery from '../../components/Imagegallery/Imagegallery';
+// import Benefit from '../../components/Benefits/Benefits';
 
 
 const Home = () => {
@@ -24,7 +29,7 @@ const Home = () => {
         dots: false,
         infinite: true,
         autoplay: true,
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
     
         responsive: [
@@ -72,7 +77,7 @@ const Home = () => {
 
   return (
     <>
-     
+    <Doublenavbar/>
     <Header/>
     <div>
       <section className='  pb-5 pt-2'>
@@ -151,7 +156,7 @@ const Home = () => {
      </section>
 
      <Sectionone/>
-     <Carousel/>
+    <Footerpage/>
       
     </div>
     </>

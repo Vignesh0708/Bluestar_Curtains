@@ -12,7 +12,7 @@ const Footerpage = () => {
 
        <>
        
-    <footer className="bg-dark text-light py-4">
+    <footer className="bg-dark text-light py-4 ">
     <div className="container">
       <div className="row">
       <div className="col-md-4  details-container ">

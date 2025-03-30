@@ -3,6 +3,8 @@ import "./Navbar.css";
 import call from "../../assets/images/phone-call.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import Login from "../Buttons/Login.jsx";
+import Sign from "../Buttons/Sign.jsx";
 
 
 
@@ -25,9 +27,9 @@ function Navbar() {
       </div>
 
       {/* Login & Signup Buttons */}
-      <div className="log-sig">
-        <button  className="btn btn-outline-primary me-2">Login</button>
-        <button className="btn btn-primary">Sign up</button>
+      <div className="log-sig d-flex">
+          <Login/>
+          <Sign/>
       </div>
     </nav>
   );
