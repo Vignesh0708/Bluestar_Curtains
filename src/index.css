@@ -19,3 +19,8 @@ code {
 a{
   text-decoration: none !important;
 }
+
+
+.dropdown-toggle::after{
+content: none !important;
+}
