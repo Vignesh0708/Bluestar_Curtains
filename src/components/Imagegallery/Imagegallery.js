@@ -9,6 +9,10 @@ import image4 from "../../assets/Imagegallery/images (4).svg";
 import image5 from "../../assets/Imagegallery/images (5).svg";
 import image6 from "../../assets/Imagegallery/cart-btn.svg";
 import image7 from "../../assets/Imagegallery/measuring-tape 1.png";
+import imageA from "../../assets/Imagegallery/curtain-with-sunlight (2) 1.svg";
+import imageB from "../../assets/Imagegallery/curtain-with-sunlight (2) 1 (1).svg";
+import imageC from "../../assets/Imagegallery/curtain-with-sunlight (2) 1 (2).svg";
+import imageD from "../../assets/Imagegallery/curtain-with-sunlight (2) 1 (3).svg";
 
 const images = [
   { id: 1, image: image1 },
@@ -116,16 +120,48 @@ const ImageGallery = () => {
 
             {/* Accordion for Customization Options */}
             <div className="accordion accordion-flush" id="accordionFlushExample">
-              <div className="accordion-item">
-                <h2 className="accordion-header">
-                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
-                    Header style
-                  </button>
-                </h2>
-                <div id="flush-collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div className="accordion-body">Choose your preferred header style.</div>
-                </div>
-              </div>
+  <div className="accordion-item">
+  <h2 className="accordion-header">
+    <button
+      className="accordion-button collapsed"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#flush-collapseOne"
+    >
+      Header style
+    </button>
+  </h2>
+  <div
+    id="flush-collapseOne"
+    className="accordion-collapse collapse"
+    data-bs-parent="#accordionFlushExample"
+  >
+    <div className="accordion-body header-style-container">
+      <div className="header-style-option">
+        <img src={imageA} alt="Eyelet Rod" />
+        <p>Eyelet (Rod)</p>
+      </div>
+      <div className="header-style-option">
+        <img src={imageB} alt="Back Tab Rod" />
+        <p>Back Tab (Rod)</p>
+      </div>
+      <div className="header-style-option">
+        <img src={imageC} alt="Pleated Track" />
+        <p>Pleated (Track)</p>
+      </div>
+      <div className="header-style-option">
+        <img src={imageD} alt="Channel Track" />
+        <p>Channel (Track)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+        
 
               <div className="accordion-item">
                 <h2 className="accordion-header">

@@ -18,9 +18,10 @@ import Cardstwo from '../../components/Cards/Cardstwo';
 // import cover3 from '../../assets/images/cover image-3.png'
 // import  right from '../../assets/icons/angle right img.svg'
 // import left from '../../assets/icons/angle left img.svg'
-// import TestimonialCarousel from '../../components/ReveiwCarousel/Carousel';
-// import ImageGallery from '../../components/Imagegallery/Imagegallery';
-// import Benefit from '../../components/Benefits/Benefits';
+import Cardstwo from '../../components/Cards/Cardstwo';
+ 
+
+ 
 
 
 const Home = () => {

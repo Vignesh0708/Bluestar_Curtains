@@ -1,4 +1,4 @@
- /* Base styles */
+/* ===================== BASE STYLES ===================== */
 .navbar2-container {
   display: flex;
   align-items: center;
@@ -10,13 +10,14 @@
   height: 100px;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 500;
+  position: relative;
 }
+
 
 /* Logo */
 .navbar-logo img {
   width: 180px;
-   
 }
 
 /* Navigation Links */
@@ -28,6 +29,9 @@
   font-weight: 500;
   margin: 0;
   padding: 0;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: auto;
 }
 
 .navbar-links li {
@@ -39,31 +43,86 @@
   color: black !important;
 }
 
-/* Book a Call Button */
-.book-call {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background-color: #ff9800;
+/* ===================== CART BUTTON ===================== */
+.cart-button {
+  background-color: #ff7900; /* Orange color */
   color: white;
   border: none;
-  padding: 10px 15px;
-  font-size: 16px;
+  padding: 8px 15px;
   border-radius: 5px;
-  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
-.book-call:hover {
-  background-color: #e68900;
+.cart-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
 }
 
-.book-call .icon {
-  font-size: 18px;
+/* ===================== PROFILE SECTION ===================== */
+.profile-section {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
-/* ===================== RESPONSIVENESS ===================== */
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+}
 
-/* Tablets (768px - 1024px) */
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 220px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.dropdown-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.sam {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.user-email {
+  font-size: 14px;
+  color: gray;
+  margin-top: 8px;
+}
+
+/* ===================== RESPONSIVE DESIGN ===================== */
+
+/* Large Tablets (768px - 1024px) */
 @media screen and (max-width: 1024px) {
   .navbar2-container {
     padding: 15px 30px;
@@ -79,7 +138,7 @@
     font-size: 14px;
   }
 
-  .book-call {
+  .cart-button {
     padding: 8px 12px;
     font-size: 14px;
   }
@@ -145,4 +204,27 @@
   .hamburger.active div:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
   }
-}      
+}
+
+/* Small Mobile Screens (Below 480px) */
+@media screen and (max-width: 480px) {
+  .navbar2-container {
+    padding: 10px;
+    height: 60px;
+  }
+
+  .navbar-logo img {
+    width: 110px;
+  }
+
+  .cart-button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .profile-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+

@@ -1,0 +1,74 @@
+.customer-section {
+  background: url("./peach-fabric-texture\ 1.svg") no-repeat center center/cover;
+  padding: 50px 0;
+}
+
+.customer-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Ensures equal card height */
+}
+
+.stars {
+  color: gold;
+  font-size: 20px;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  min-height: 120px; /* Ensures consistent height */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.user-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.testimonial-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.testimonial-role {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .customer-title {
+    font-size: 2rem;
+  }
+
+  .testimonial-text {
+    font-size: 14px;
+    min-height: 100px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .user-img {
+    width: 40px;
+    height: 40px;
+  }
+}
