@@ -1,0 +1,88 @@
+/* Testimonial Section */
+.testimonial-section {
+    min-height: 90vh;
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    background-image: url("../../assets/images/cover\ image-3.png");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Card Design */
+  .testimonial-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* User Image */
+  .user-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+  
+  /* Star Rating */
+  .stars {
+    color: #ffd700 !important;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  /* Custom Navigation Arrows */
+  .custom-prev,
+  .custom-next {
+    width: 55px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    z-index: 10;
+  }
+  
+  .custom-prev {
+    left: 10px;
+  }
+  
+  .custom-next {
+    right: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .testimonial-card {
+      padding: 15px;
+    }
+  
+    .user-image {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .custom-prev,
+    .custom-next {
+      font-size: 1.2rem;
+      padding: 8px;
+    }
+  }
+  

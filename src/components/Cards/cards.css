@@ -1,0 +1,26 @@
+.card-container {
+    position: relative;
+    padding: 2rem;
+    background: url('../../assets/cover img/cover image-1.png') no-repeat center;
+    background-size: cover;
+    border-radius: 20px;
+  }
+  
+  .product-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .image-box {
+    max-width: 300px;
+    margin: auto;
+  }
+  
+ 

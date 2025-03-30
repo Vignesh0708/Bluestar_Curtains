@@ -7,9 +7,9 @@ const Header = () => {
 
     
 
-       <div>
+       <div style={{maxHeight:"150vh"}}>
 
-        <img className='  w-100' src={header} alt=''/>
+        <img className='  w-100 ' src={header} alt=''/>
 
         <div className= '  hero-sec   rounded  '>
       <span className='text-white d-inline-flex p-2'>Find Our Latest Design <br></br> Curtains For Your Living Room</span>
